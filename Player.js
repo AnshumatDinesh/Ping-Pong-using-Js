@@ -1,17 +1,26 @@
+/**
+ A class that defines the players behaviour
+ */
 class Player{
     constructor(player_id,x,y,Upkey,Downkey,LeftKey,RightKey,side){
-        this.id=player_id;
+        this.id=player_id;//The HTML id 
+        //Position of player
         this.pos_x=x;
         this.pos_y=y;
+        //momentum of player
         this.vel_x=0;
         this.vel_y=0;
+        //The keybinds
         this.upKey=Upkey;
         this.downKey=Downkey;
         this.leftKey=LeftKey;
         this.rightKey=RightKey;
+        //Side of the player
         this.side=side
     }
+    //Movement methods
     moveUp(){
+        
         if(this.pos_y<-4){
             return;
         }
