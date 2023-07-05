@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+*{
+    background-color: rgb(73, 162, 73);
+    padding: 0px;
+    margin: 0px;
+}
+html, body{overflow:hidden;}
+.player{
+    position: absolute;
+    width:1vw;
+    height:10vh;
+    background-color: rgb(0, 0, 0);
+}
+.dot{
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.net{
+    position: absolute;
+    background-color: rgb(56, 56, 121);
+    width: 1vw;
+    height: 100vh;
+    left: 49.5vw;
+    top: 0vh;
+}
+.score{
+    color: rgb(173, 65, 65);
+    font-size: large;
+    position: absolute;
+    left:45vw;
+    top:0vh;
+}
+.home{
+    position: relative;
+    width: 100vw;
+    height:100vh;
+    background-color:rgb(73, 162, 73) ;
+    display: flexbox;
+    flex-direction: column;
+    align-items: baseline;
+}
+.label{
+    position: relative;
+    left:30vw;
+    top:40vh;
+    font-family:Caprasimo;
+    font-size:10vh;
+    justify-content: center;
+    color:white;
+}
+.buttons{
+    position: relative;
+    left: 40vw;
+    top:50vh;
+}
+button{
+    border-radius: 2vw;
+    border-width: 0px;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 1vh 1vw 1vh 1vw;
+    transition-duration: 100ms;
+}
+#SPB:hover{
+    transform: scale(1.5) translateX(-1.2vw);
+    background-color: rgba(255, 255, 255, 0.593);
+}
+#MPB:hover{
+    transform: scale(1.5) translateX(1.5vw);
+    background-color: rgba(255, 255, 255, 0.593);
+}
+.score{
+    font-family:Caprasimo;
+    font-size:5vh;
+}
